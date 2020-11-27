@@ -1,0 +1,7 @@
+hate 10
+you suck 10
+tired 1
+depress 5
+stress 3
+die 10
+kill 7
