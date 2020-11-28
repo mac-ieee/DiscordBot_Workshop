@@ -1,9 +1,3 @@
-# cmd in file explorer folder where the files are located
-# git add .
-# git commit -am "edit"
-# git push heroku master
-## turn off then turn on bot in heroku dashboard > resources
-# heroku logs -a friedsushibot
 
 import cv2
 # pip install opencv-python
