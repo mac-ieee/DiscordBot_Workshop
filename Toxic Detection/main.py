@@ -8,7 +8,9 @@ load_dotenv(".env")
 client = commands.Bot(command_prefix="et ")
 client.remove_command("help")
 
-# Dictionaries
+
+# Dictionaries, if these return an error, uncomment the line below
+# os.chdir(r"File directory of your files e.g. C:\folder\positive_words.txt")
 pos_words = open("positive_words.txt", "r")
 neg_words = open("negative_words.txt", "r")
 
