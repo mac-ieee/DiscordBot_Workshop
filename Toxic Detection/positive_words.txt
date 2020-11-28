@@ -1,7 +1,1 @@
-love 10
-cool 3
-happy 7
-joy 7
-hope 5
-fun 3
-game 1
+<word> <points>
