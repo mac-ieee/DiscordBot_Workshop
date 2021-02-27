@@ -43,7 +43,7 @@ async def on_message(msg):
         # Role Check: Is the bot more superior than the offending user? Is the user the server owner?
         if msg.guild.get_member(client.user.id).top_role > msg.author.top_role and msg.author.id != msg.guild.owner_id:
             await msg.author.send(f"Watch your language. You have been banned for {swear_ban_time} seconds\n"
-                                      f"You may use the invite link to rejoin: https://discord.gg/gMYzJN8hb7")
+                                      f"You may use the invite link to rejoin: YOUR INVITE LINK")
             await msg.author.ban(reason="Cursing")
             await msg.channel.send(f"{msg.author.mention} was banned")
             await asyncio.sleep(swear_ban_time)
