@@ -1,6 +1,5 @@
 # Imports
 import asyncio
-from discord.utils import get
 import discord
 from discord.ext import commands
 import os
@@ -42,7 +41,7 @@ async def on_message(msg):
     # Swear Check: Did the person swear? Is this person a REAL person? Are we REAL?
     if swear_check and not msg.author.bot:
         # Role Check: Is the bot more superior than the offending user? Is the user the server owner?
-        if get(msg.guild.roles, name="ToxicBot") > msg.author.top_role and msg.author.id != msg.guild.owner_id:
+        if msg.guild.get_member(client.user.id).top_role > msg.author.top_role and msg.author.id != msg.guild.owner_id:
             await msg.author.send(f"Watch your language. You have been banned for {swear_ban_time} seconds\n"
                                       f"You may use the invite link to rejoin: https://discord.gg/gMYzJN8hb7")
             await msg.author.ban(reason="Cursing")
