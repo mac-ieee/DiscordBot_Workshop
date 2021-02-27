@@ -10,10 +10,10 @@ client = commands.Bot(command_prefix="MR. HAT!")
 TOKEN = os.getenv('DISCORD_TOKEN')
 
 # Define Constants
-swear_ban_time = 15
+
 
 # Define Dictionaries
-swear_words = open("swear_words.txt", "r")
+
 
 
 # creating on ready command to let us know the bot is online
